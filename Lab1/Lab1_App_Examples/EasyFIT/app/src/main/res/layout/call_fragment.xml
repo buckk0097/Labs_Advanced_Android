@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundfragment">
+    
+    <androidx.core.widget.NestedScrollView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:cardBackgroundColor="@color/cardbackground"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:text="U.S. Department of Health and Human Services" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="
+A healthy eating plan gives your body the nutrients it needs every day while staying within your daily calorie goal for weight loss. A healthy eating plan also will lower your risk for heart disease and other health conditions.
+
+A healthy eating plan:
+
+Emphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products
+Includes lean meats, poultry, fish, beans, eggs, and nuts
+Limits saturated and trans fats, sodium, and added sugars
+Controls portion sizes
+Calories
+To lose weight, most people need to reduce the number of calories they get from food and beverages (energy IN) and increase their physical activity (energy OUT).
+
+For a weight loss of 1–1 ½ pounds per week, daily intake should be reduced by 500 to 750 calories. In general:
+
+Eating plans that contain 1,200–1,500 calories each day will help most women lose weight safely.
+Eating plans that contain 1,500–1,800 calories each day are suitable for men and for women who weigh more or who exercise regularly.
+Very low calorie diets of fewer than 800 calories per day should not be used unless you are being monitored by your doctor."/>
+                <ImageView
+                    android:id="@+id/shareimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_black_24dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="end"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        
+    </androidx.core.widget.NestedScrollView>
+
+
+    <include layout="@layout/bottomsheet"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

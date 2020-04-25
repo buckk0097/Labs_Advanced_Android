@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232323"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/dialog_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="85dp"/>
+        <TextView
+            android:id="@+id/dialog_phone_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Phone Number"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/dialog_description_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Description Description Description DescriptionDescription Description Description Description Description Description Description"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/dialog_btn_call"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/dialog_call"
+            android:drawablePadding="20dp"
+            android:text="Mobile Call"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"/>
+        <Button
+            android:id="@+id/dialog_btn_message"
+            android:drawablePadding="20dp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Use Messenger"
+            />
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/claraclarck"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
